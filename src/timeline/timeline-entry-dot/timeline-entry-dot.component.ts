@@ -103,6 +103,7 @@ export class NgTimelineEntryDotComponent implements AfterViewInit {
       transform: 'translateX(0) translateY(-50%)',
       width: '100%',
       height: '100%',
+      borderBottom: '1px solid rgba(0,0,0,0.12)',
       opacity: 1,
       borderRadius: 0
     }
