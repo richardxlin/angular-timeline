@@ -13,10 +13,11 @@ export class DemoComponent {
   color: boolean = false;
   size: number = 40;
   side: string = 'left';
-  mobileWidthThreshold: number = 640;
+  mobileWidthThreshold: number = 9999;
 
   entries = [
     {
+      date: '12/12/2019',
       header: 'header',
       content: 'content'
     }
@@ -24,6 +25,7 @@ export class DemoComponent {
 
   addEntry() {
     this.entries.push({
+      date: '12/12/2019',
       header: 'header',
       content: 'content'
     })

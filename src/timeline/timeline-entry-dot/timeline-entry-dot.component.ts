@@ -77,7 +77,7 @@ export class NgTimelineEntryDotComponent implements AfterViewInit {
   private getCollapsedStyle() {
     return {
       top: '50%',
-      left: (this.alternate || this.mobile) ? '-5px' : 'calc(100% + 5px)',
+      left: (this.alternate || this.mobile) ? '-10px' : 'calc(100% + 10px)',
       width: this.size + 'px',
       height: this.size + 'px',
       opacity: 1,
