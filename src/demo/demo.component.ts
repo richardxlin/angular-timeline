@@ -11,7 +11,7 @@ export class DemoComponent {
   alternate: boolean = false;
   toggle: boolean = false;
   color: boolean = false;
-  size: number = 40;
+  size: number = 20;
   side: string = 'left';
   mobileWidthThreshold: number = 9999;
 
