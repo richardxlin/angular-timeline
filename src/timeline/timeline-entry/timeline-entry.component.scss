@@ -1,6 +1,6 @@
 @import '~@angular/material/theming';
 
-mgl-timeline-entry {
+ng-timeline-entry {
     display: block;
     position: relative;
     margin-bottom: 50px;
@@ -15,10 +15,10 @@ mgl-timeline-entry {
         margin-left: 30px;
     }
 
-    & .mgl-timeline-entry-card {
+    & .ng-timeline-entry-card {
         background-color: rgb(240, 240, 240);
 
-         & .mgl-timeline-entry-card-header {
+         & .ng-timeline-entry-card-header {
              position: relative;
              background-color: rgb(230, 230, 230);
          }

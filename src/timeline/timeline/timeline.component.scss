@@ -1,11 +1,11 @@
 @import '~@angular/material/theming';
 
-mgl-timeline {
+ng-timeline {
     position: relative;
     display: block;
     padding: 50px 0;
 
-    & .mgl-timeline-line {
+    & .ng-timeline-line {
         position: absolute;
         top: 0;
         height: 100%;
@@ -17,7 +17,7 @@ mgl-timeline {
 
 
     &.mobile {
-        & .mgl-timeline-line {
+        & .ng-timeline-line {
             left: 20px;
             transform: none;
         }

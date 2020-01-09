@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "mgl-angular-timeline": {
+    "angular-timeline": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -49,21 +49,21 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "mgl-angular-timeline:build"
+            "browserTarget": "angular-timeline:build"
           },
           "configurations": {
             "prod": {
-              "browserTarget": "mgl-angular-timeline:build:prod"
+              "browserTarget": "angular-timeline:build:prod"
             },
             "production": {
-              "browserTarget": "mgl-angular-timeline:build:production"
+              "browserTarget": "angular-timeline:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "mgl-angular-timeline:build"
+            "browserTarget": "angular-timeline:build"
           }
         },
         "test": {
@@ -96,7 +96,7 @@
         }
       }
     },
-    "mgl-angular-timeline-e2e": {
+    "angular-timeline-e2e": {
       "root": "e2e",
       "sourceRoot": "e2e",
       "projectType": "application",
@@ -105,7 +105,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "./protractor.conf.js",
-            "devServerTarget": "mgl-angular-timeline:serve"
+            "devServerTarget": "angular-timeline:serve"
           }
         },
         "lint": {
@@ -122,7 +122,7 @@
       }
     }
   },
-  "defaultProject": "mgl-angular-timeline",
+  "defaultProject": "angular-timeline",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",

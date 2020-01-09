@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MglTimelineEntryDotComponent } from './timeline-entry-dot.component';
+import { NgTimelineEntryDotComponent } from './timeline-entry-dot.component';
 
 describe('TimelineEntryDotComponent', () => {
-  let component: MglTimelineEntryDotComponent;
-  let fixture: ComponentFixture<MglTimelineEntryDotComponent>;
+  let component: NgTimelineEntryDotComponent;
+  let fixture: ComponentFixture<NgTimelineEntryDotComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MglTimelineEntryDotComponent ]
+      declarations: [ NgTimelineEntryDotComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MglTimelineEntryDotComponent);
+    fixture = TestBed.createComponent(NgTimelineEntryDotComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -11,17 +11,17 @@
 <button (click)="mobileWidthThreshold = mobileWidthThreshold - 10">Decrease Mobile Threshold</button> 
 Mobile Threshold: {{mobileWidthThreshold}}
 
-<mgl-timeline [toggle]="toggle" [alternate]="alternate" [focusOnOpen]="false" [side]="side" [mobileWidthThreshold]="mobileWidthThreshold">
-  <mgl-timeline-entry *ngFor="let entry of entries; let i = index" (expand)="onExpand($event, i)">
-    <mgl-timeline-entry-header>
+<ng-timeline [toggle]="toggle" [alternate]="alternate" [focusOnOpen]="false" [side]="side" [mobileWidthThreshold]="mobileWidthThreshold">
+  <ng-timeline-entry *ngFor="let entry of entries; let i = index" (expand)="onExpand($event, i)">
+    <ng-timeline-entry-header>
       <div>{{entry.header}}</div>
-    </mgl-timeline-entry-header>
-    <mgl-timeline-entry-content>
+    </ng-timeline-entry-header>
+    <ng-timeline-entry-content>
       <div>{{entry.content}}</div>
       <div>{{entry.content}}</div>
       <div>{{entry.content}}</div>
-    </mgl-timeline-entry-content>
-    <mgl-timeline-entry-dot [class]="color ? 'primary' : 'accent'" [size]="size"></mgl-timeline-entry-dot>
-    <mgl-timeline-entry-side>2017</mgl-timeline-entry-side>
-  </mgl-timeline-entry>
-</mgl-timeline>
+    </ng-timeline-entry-content>
+    <ng-timeline-entry-dot [class]="color ? 'primary' : 'accent'" [size]="size"></ng-timeline-entry-dot>
+    <ng-timeline-entry-side>2017</ng-timeline-entry-side>
+  </ng-timeline-entry>
+</ng-timeline>

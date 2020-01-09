@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MglTimelineEntryComponent } from './timeline-entry.component';
+import { NgTimelineEntryComponent } from './timeline-entry.component';
 
-describe('MglTimelineEntryComponent', () => {
-  let component: MglTimelineEntryComponent;
-  let fixture: ComponentFixture<MglTimelineEntryComponent>;
+describe('NgTimelineEntryComponent', () => {
+  let component: NgTimelineEntryComponent;
+  let fixture: ComponentFixture<NgTimelineEntryComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MglTimelineEntryComponent ]
+      declarations: [ NgTimelineEntryComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MglTimelineEntryComponent);
+    fixture = TestBed.createComponent(NgTimelineEntryComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

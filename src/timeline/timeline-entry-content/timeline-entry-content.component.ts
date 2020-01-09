@@ -2,12 +2,12 @@ import { AnimationBuilder, style, animate } from '@angular/animations';
 import { Component, EventEmitter, ElementRef, AfterViewInit, Renderer, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'mgl-timeline-entry-content',
+  selector: 'ng-timeline-entry-content',
   templateUrl: './timeline-entry-content.component.html',
   styleUrls: ['./timeline-entry-content.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class MglTimelineEntryContentComponent implements AfterViewInit {
+export class NgTimelineEntryContentComponent implements AfterViewInit {
 
   private contentHeight;
   animationDone = new EventEmitter<any>();

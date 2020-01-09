@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('mgl-angular-timeline App', () => {
+describe('angular-timeline App', () => {
   let page: AppPage;
 
   beforeEach(() => {

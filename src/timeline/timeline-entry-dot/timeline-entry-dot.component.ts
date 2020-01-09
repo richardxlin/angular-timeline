@@ -6,12 +6,12 @@ import { AnimationBuilder, style, animate } from '@angular/animations';
 import { DOCUMENT } from '@angular/common';
 
 @Component({
-  selector: 'mgl-timeline-entry-dot',
+  selector: 'ng-timeline-entry-dot',
   templateUrl: './timeline-entry-dot.component.html',
   styleUrls: ['./timeline-entry-dot.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class MglTimelineEntryDotComponent implements AfterViewInit {
+export class NgTimelineEntryDotComponent implements AfterViewInit {
 
   private _expanded: boolean = false;
   private _alternate: boolean = false;
