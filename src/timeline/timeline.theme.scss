@@ -19,7 +19,7 @@
             color: map-get($foreground, base);
 
             & .ng-timeline-entry-card-header {
-                background-color: map-get($background, app-bar) !important;
+                background-color: white !important;
             }
         }
 
