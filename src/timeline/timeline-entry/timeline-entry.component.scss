@@ -41,26 +41,26 @@ ng-timeline-entry {
 }
 
 .chevron::before {
-	border-style: solid;
-	border-width: 0.15em 0.15em 0 0;
+    // border-style: solid;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #757575;
 	content: '';
 	display: inline-block;
-	height: 0.45em;
 	left: 0.15em;
 	position: relative;
 	top: 0.15em;
 	transform: rotate(-45deg);
 	vertical-align: top;
-    width: 0.45em;
     z-index: 1;
 }
 
 .chevron.up:before {
-	left: 0.15em;
-	transform: rotate(-45deg);
+	transform: rotate(0deg);
 }
 
 .chevron.down:before {
-	top: 0;
-	transform: rotate(135deg);
+	transform: rotate(180deg);
 }
