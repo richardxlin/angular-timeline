@@ -2,6 +2,7 @@ ng-timeline-entry-content {
     position: relative;
     display: block;
     overflow: hidden;
+    border-top: 1px solid rgba(0,0,0,0.12);
 
     & > div {
         padding: 10px;

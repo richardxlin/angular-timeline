@@ -90,22 +90,22 @@ export class NgTimelineEntryDotComponent implements AfterViewInit {
   private getTransitionStyle() {
     return {
       ...this.getCollapsedStyle(),
-      left: '50%',
-      opacity: 0.5,
-      boxShadow: 'none'
+      // left: '50%',
+      // opacity: 0.5,
+      // boxShadow: 'none'
     }
   }
 
   private getExpandedStyle() {
     return {
       ...this.getTransitionStyle(),
-      left: '0',
-      transform: 'translateX(0) translateY(-50%)',
-      width: '100%',
-      height: '100%',
-      borderBottom: '1px solid rgba(0,0,0,0.12)',
-      opacity: 1,
-      borderRadius: 0
+      // left: '0',
+      // transform: 'translateX(0) translateY(-50%)',
+      // width: '100%',
+      // height: '100%',
+      // borderBottom: '1px solid rgba(0,0,0,0.12)',
+      // opacity: 1,
+      // borderRadius: 0
     }
   }
 
@@ -115,8 +115,8 @@ export class NgTimelineEntryDotComponent implements AfterViewInit {
       this.animation = this.animationBuilder
         .build([
           style(this.getCollapsedStyle()),
-          animate('200ms ease', style(this.getTransitionStyle())),
-          animate('200ms ease', style(this.getExpandedStyle())),
+          animate('10ms ease', style(this.getTransitionStyle())),
+          animate('10ms ease', style(this.getExpandedStyle())),
         ])
         .create(this.elementRef.nativeElement)
       this.animation.onDone(() => this.animationDone.emit({ toState: 'expanded' }));
