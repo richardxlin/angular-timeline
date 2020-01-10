@@ -1,7 +1,7 @@
 {
-  "name": "angular-timeline",
+  "name": "angular2x-timeline",
   "author": "Richard Lin",
-  "version": "0.1.0",
+  "version": "0.1.4",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
