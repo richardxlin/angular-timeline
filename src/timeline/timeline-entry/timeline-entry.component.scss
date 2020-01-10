@@ -42,7 +42,7 @@ ng-timeline-entry {
 
 .chevron::before {
 	border-style: solid;
-	border-width: 0.25em 0.25em 0 0;
+	border-width: 0.15em 0.15em 0 0;
 	content: '';
 	display: inline-block;
 	height: 0.45em;
@@ -51,7 +51,8 @@ ng-timeline-entry {
 	top: 0.15em;
 	transform: rotate(-45deg);
 	vertical-align: top;
-	width: 0.45em;
+    width: 0.45em;
+    z-index: 1;
 }
 
 .chevron.up:before {

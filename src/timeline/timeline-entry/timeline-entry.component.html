@@ -1,6 +1,6 @@
 <div class="ng-timeline-entry-card">
   <div class="ng-timeline-entry-card-header" (click)="toggle($event)">
-    <div class="ng-timeline-entry-header-chevron chevron down"></div>
+    <div class="ng-timeline-entry-header-chevron chevron {{expanded ? 'up': 'down'}}"></div>
     <ng-content select="ng-timeline-entry-side"></ng-content>
     <ng-content select="ng-timeline-entry-dot"></ng-content>
     <div class="ng-timeline-entry-connector-line"></div>

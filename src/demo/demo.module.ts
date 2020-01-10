@@ -3,6 +3,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { DemoComponent } from './demo.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -10,8 +11,10 @@ import { DemoComponent } from './demo.component';
   ],
   imports: [
     BrowserModule,
+    MatIconModule,    
     BrowserAnimationsModule,
-    NgTimelineModule
+    NgTimelineModule,
+    
   ],
   providers: [],
   bootstrap: [DemoComponent]
