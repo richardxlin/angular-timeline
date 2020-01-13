@@ -1,17 +1,17 @@
-# angular-ng-timeline
+# angular2x-timeline
 
-[![npm version](https://badge.fury.io/js/angular-ng-timeline.svg)](https://badge.fury.io/js/angular-ng-timeline)
+[![npm version](https://badge.fury.io/js/angular2x-timeline.svg)](https://badge.fury.io/js/angular-ng-timeline)
 
 This is a animated vertical timeline component for Angular 2+. Angular Material is supported but not mandatory.
 
 ## Getting started
 
-1) run `npm install --save angular-ng-timeline` 
+1) run `npm install --save angular2x-timeline` 
 2) in your app module: 
 ```typescript
 ...
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgTimelineModule } from 'angular-ng-timeline';
+import { NgTimelineModule } from 'angular2x-timeline';
 
 @NgModule({
   ...
