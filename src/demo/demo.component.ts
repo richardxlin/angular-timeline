@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class DemoComponent {
   title = 'app';
-
+  currentYear = 2019
   alternate: boolean = false;
   toggle: boolean = false;
   color: boolean = false;
@@ -17,18 +17,24 @@ export class DemoComponent {
 
   entries = [
     {
-      date: '12/12/2019',
+      year: 2018,
       header: 'header',
       content: 'content'
-    }
+    },
+    {
+      year: 2018,
+      header: 'header',
+      content: 'content'
+    }         
   ]
 
   addEntry() {
     this.entries.push({
-      date: '12/12/2019',
+      year: this.currentYear,
       header: 'header',
       content: 'content'
-    })
+    });
+    this.currentYear++;
   }
 
   removeEntry() {

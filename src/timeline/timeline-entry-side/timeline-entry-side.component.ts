@@ -22,10 +22,9 @@ export class NgTimelineEntrySideComponent {
   
   constructor(private elementRef: ElementRef, private timelineService: TimelineService) {}
 
-  ngAfterContentInit()	{
-    console.log('change', this.elementRef.nativeElement.innerText)
+  ngAfterViewInit()	{
     const year = this.elementRef.nativeElement.innerText;
-    const yearExists = this.timelineService.hasYear(year);
+    const yearExists = this.timelineService.hasYear(year) && year.length > 1;
     if (yearExists) {
       this.elementRef.nativeElement.remove();
     } else {

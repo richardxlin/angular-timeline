@@ -16,7 +16,7 @@ Mobile Threshold: {{mobileWidthThreshold}}
         <ng-timeline-entry *ngFor="let entry of entries; let i = index" (expand)="onExpand($event, i)">
           <ng-timeline-entry-header>
             <div>
-              <span>{{entry.date}}</span> || 
+              <span>{{entry.year}}</span> || 
               {{entry.header}}
             </div>
           </ng-timeline-entry-header>
@@ -28,7 +28,7 @@ Mobile Threshold: {{mobileWidthThreshold}}
           <ng-timeline-entry-dot [class]="color ? 'primary' : 'accent'" [size]="size">
               <mat-icon>home</mat-icon>  
           </ng-timeline-entry-dot>
-          <ng-timeline-entry-side>2017</ng-timeline-entry-side>
+          <ng-timeline-entry-side>{{entry.year}}</ng-timeline-entry-side>
         </ng-timeline-entry>
       </ng-timeline>
 </div>
