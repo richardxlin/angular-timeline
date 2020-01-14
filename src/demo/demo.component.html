@@ -6,12 +6,13 @@
 <button (click)="size = size + 10">Increase size</button>
 <button (click)="size = size - 10">Decrease size</button>
 <button (click)="toggleSide()">Toggle Side</button>
+<button (click)="display = !display">Toggle display</button>
 
 <button (click)="mobileWidthThreshold = mobileWidthThreshold + 10">Increase Mobile Threshold</button>
 <button (click)="mobileWidthThreshold = mobileWidthThreshold - 10">Decrease Mobile Threshold</button> 
 Mobile Threshold: {{mobileWidthThreshold}}
 
-<div class="container">
+<div class="container" *ngIf="display">
     <ng-timeline [toggle]="toggle" [alternate]="alternate" [focusOnOpen]="false" [side]="side" [mobileWidthThreshold]="mobileWidthThreshold">
         <ng-timeline-entry *ngFor="let entry of entries; let i = index" (expand)="onExpand($event, i)">
           <ng-timeline-entry-header>

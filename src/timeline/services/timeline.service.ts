@@ -17,4 +17,8 @@ export class TimelineService {
       this.years.add(year);
   }
 
+  reset():void {
+      this.years = new Set();
+  }
+
 }

@@ -32,5 +32,9 @@ export class NgTimelineEntrySideComponent {
     }
   }
 
+  ngOnDestroy() {
+    this.timelineService.reset();
+  }
+
 
 }

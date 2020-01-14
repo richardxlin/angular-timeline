@@ -13,6 +13,7 @@ export class DemoComponent {
   color: boolean = false;
   size: number = 20;
   side: string = 'left';
+  display: boolean = true;
   mobileWidthThreshold: number = 9999;
 
   entries = [
