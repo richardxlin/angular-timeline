@@ -1,4 +1,4 @@
-import {HostBinding, ViewEncapsulation} from '@angular/core';
+import {HostBinding, ViewEncapsulation, Input} from '@angular/core';
 import { NgTimelineEntrySideComponent } from './../timeline-entry-side/timeline-entry-side.component';
 import { Subscription } from 'rxjs/Subscription';
 import { NgTimelineEntryDotComponent } from './../timeline-entry-dot/timeline-entry-dot.component';
@@ -15,6 +15,8 @@ import { NgTimelineEntryHeaderComponent } from '../timeline-entry-header/timelin
   encapsulation: ViewEncapsulation.None
 })
 export class NgTimelineEntryComponent implements AfterViewInit, OnDestroy {
+
+  @Input() hideContent: boolean = false;
 
   private subscriptions: Subscription[] = [];
 

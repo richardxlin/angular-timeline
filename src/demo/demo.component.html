@@ -14,7 +14,7 @@ Mobile Threshold: {{mobileWidthThreshold}}
 
 <div class="container" *ngIf="display">
     <ng-timeline [toggle]="toggle" [alternate]="alternate" [focusOnOpen]="false" [side]="side" [mobileWidthThreshold]="mobileWidthThreshold">
-        <ng-timeline-entry *ngFor="let entry of entries; let i = index" (expand)="onExpand($event, i)">
+        <ng-timeline-entry *ngFor="let entry of entries; let i = index" (expand)="onExpand($event, i)" [hideContent]=false>
           <ng-timeline-entry-header>
             <div>
               <span>{{entry.year}}</span> || 

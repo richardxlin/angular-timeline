@@ -1,5 +1,5 @@
 import { AnimationBuilder, style, animate } from '@angular/animations';
-import { Component, EventEmitter, ElementRef, AfterViewInit, Renderer, ViewEncapsulation } from '@angular/core';
+import { Component, EventEmitter, ElementRef, AfterViewInit, Renderer, ViewEncapsulation, Input } from '@angular/core';
 
 @Component({
   selector: 'ng-timeline-entry-content',
@@ -8,17 +8,16 @@ import { Component, EventEmitter, ElementRef, AfterViewInit, Renderer, ViewEncap
   encapsulation: ViewEncapsulation.None
 })
 export class NgTimelineEntryContentComponent implements AfterViewInit {
-
   private contentHeight;
   animationDone = new EventEmitter<any>();
 
   private _expanded: boolean = false;
 
   set expanded(expanded: boolean) {
-    this.contentHeight = this.elementRef.nativeElement.scrollHeight;
-    const animate = this._expanded !== expanded;
-    this._expanded = expanded;
-    animate ? this.animate() : this.setStyle
+      this.contentHeight = this.elementRef.nativeElement.scrollHeight;
+      const animate = this._expanded !== expanded;
+      this._expanded = expanded;
+      animate ? this.animate() : this.setStyle
   }
 
   get expanded() {
