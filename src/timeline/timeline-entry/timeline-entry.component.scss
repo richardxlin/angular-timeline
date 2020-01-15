@@ -64,6 +64,10 @@ ng-timeline-entry {
 	transform: rotate(180deg);
 }
 
+.has-pointer {
+    cursor: pointer;
+}
+
 .ripple {
     position: relative;
     cursor: pointer;    

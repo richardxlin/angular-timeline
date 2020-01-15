@@ -1,10 +1,10 @@
 <div class="ng-timeline-entry-card">
-  <div class="ng-timeline-entry-card-header" (click)="hideContent ? null : toggle($event)">
+  <div class="ng-timeline-entry-card-header {{hideContent ? '' : 'has-pointer'}}" (click)="hideContent ? null : toggle($event)">
       <ng-content select="ng-timeline-entry-side"></ng-content>
       <ng-content select="ng-timeline-entry-dot"></ng-content>
       <div class="ng-timeline-entry-connector-line"></div>    
       <div class="ng-timeline-entry-header-chevron {{ hideContent ? '' : 'chevron'}} {{expanded ? 'up': 'down'}}"></div>
-      <div class="ripple">
+      <div class="{{ hideContent ? '' : 'ripple' }}">
           <ng-content select="ng-timeline-entry-header"></ng-content>
       </div>
   </div>
