@@ -12,6 +12,10 @@
 <button (click)="mobileWidthThreshold = mobileWidthThreshold - 10">Decrease Mobile Threshold</button> 
 Mobile Threshold: {{mobileWidthThreshold}}
 
+<button (click)="filterByYear('2018')">Filter 2018</button>
+<button (click)="filterByYear('2019')">Filter 2019</button>
+<button (click)="filterByYear('all')">Filter 2020</button>
+
 <div class="container" *ngIf="display">
     <ng-timeline [toggle]="toggle" [alternate]="alternate" [focusOnOpen]="false" [side]="side" [mobileWidthThreshold]="mobileWidthThreshold">
         <ng-timeline-entry *ngFor="let entry of entries; let i = index" (expand)="onExpand($event, i)" [hideContent]=false>

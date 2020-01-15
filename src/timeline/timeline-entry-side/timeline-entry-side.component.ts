@@ -22,17 +22,22 @@ export class NgTimelineEntrySideComponent {
   
   constructor(private elementRef: ElementRef, private timelineService: TimelineService) {}
 
-  ngAfterViewInit()	{
+  ngAfterViewInit() {
+    this.createYearMarkers();
+  }
+
+  private createYearMarkers() {
     const year = this.elementRef.nativeElement.innerText;
     const yearExists = this.timelineService.hasYear(year) && year.length > 1;
     if (yearExists) {
       this.elementRef.nativeElement.remove();
     } else {
       this.timelineService.addYear(year.trim());
-    }
+    }    
   }
 
   ngOnDestroy() {
+    console.log('timeline tree destroy')
     this.timelineService.reset();
   }
 
