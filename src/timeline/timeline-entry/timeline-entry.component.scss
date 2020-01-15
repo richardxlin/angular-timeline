@@ -40,10 +40,6 @@ ng-timeline-entry {
     }
 }
 
-.has-pointer {
-    cursor: pointer;
-}
-
 .chevron::before {
     // border-style: solid;
     width: 0;
@@ -70,8 +66,9 @@ ng-timeline-entry {
 
 .ripple {
     position: relative;
-    overflow: hidden;
+    cursor: pointer;    
     transform: translate3d(0, 0, 0);
+    overflow: hidden;
   }
   .ripple:after {
     content: "";
