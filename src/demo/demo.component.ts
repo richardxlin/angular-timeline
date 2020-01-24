@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { isNgTemplate } from '@angular/compiler';
 
 @Component({
   selector: 'app-root',
   templateUrl: './demo.component.html',
   styleUrls: ['./demo.component.scss']
 })
-export class DemoComponent {
+export class DemoComponent implements OnInit{
   title = 'app';
   currentYear = 2019
   alternate: boolean = false;
@@ -57,15 +58,20 @@ export class DemoComponent {
 
   ngOnInit(){
     this.data = this.entries;
+    for (let x=0; x<10; x++) {
+      this.addEntry();
+    }
   }
 
   addEntry() {
-    this.entries.push({
-      year: this.currentYear,
-      header: 'header',
-      content: 'content'
-    });
-    this.currentYear++;
+    for (let x=0; x<101; x++) {
+      this.entries.push({
+        year: this.currentYear,
+        header: 'header',
+        content: 'content'
+      });
+      this.currentYear++;
+    }
   }
 
   sortEntries(){
@@ -78,6 +84,12 @@ export class DemoComponent {
       return compareInt;
     });
   }
+
+  trackByFunction(index, item){
+    if(!item) return null;
+    return item.header;
+  }
+
 
   removeEntry() {
     this.entries.pop();

@@ -14,11 +14,12 @@ Mobile Threshold: {{mobileWidthThreshold}}
 
 <button (click)="filterByYear('2018')">Filter 2018</button>
 <button (click)="filterByYear('2019')">Filter 2019</button>
-<button (click)="filterByYear('all')">Filter 2020</button>
+<button (click)="filterByYear('all')">All</button>
 
 <div class="container" *ngIf="display">
+  Number of Entries: {{entries.length}}
     <ng-timeline [toggle]="toggle" [alternate]="alternate" [focusOnOpen]="false" [side]="side" [mobileWidthThreshold]="mobileWidthThreshold">
-        <ng-timeline-entry *ngFor="let entry of entries; let i = index" (expand)="onExpand($event, i)" [hideContent]=false>
+        <ng-timeline-entry *ngFor="let entry of entries; let i = index; trackBy: trackByFunction" (expand)="onExpand($event, i)" [hideContent]=false>
           <ng-timeline-entry-header>
             <div>
               <span>{{entry.year}}</span> || 
