@@ -55,7 +55,7 @@
     "karma-jasmine": "~2.0.1",
     "karma-jasmine-html-reporter": "^1.4.0",
     "ng-packagr": "^4.4.5",
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "protractor": "^5.4.2",
     "rxjs": "^6.3.3",
     "rxjs-compat": "^6.3.3",
